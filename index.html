@@ -20,24 +20,21 @@
    
     <style>
      /* Mematikan scrolling horizontal untuk semua perangkat */
-    body {
-      overflow-x: hidden;
-    }
+   
     .container {
       overflow-x: hidden;
     }
-
-    .unslate_co--site-nav.site-nav-target {
-      overflow-x: hidden;
+    /* Membuat scroll bar vertikal */
+    .container::-webkit-scrollbar {
+      width: 0;  /* Hapus lebar scroll bar */
     }
-
     
-    /* Mematikan scrolling horizontal hanya untuk perangkat dengan lebar layar maksimum 767px (ukuran umum perangkat seluler) */
-    @media (max-width: 1800px) {
-      body {
-        overflow-x: hidden;
-      }
+    /* Membuat scroll bar horizontal */
+    .container::-webkit-scrollbar {
+      height: 0;  /* Hapus tinggi scroll bar */
     }
+
+  
     </style>
     
     <!-- Theme Style -->
